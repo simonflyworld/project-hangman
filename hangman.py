@@ -74,10 +74,13 @@ def display_letters(word, guesses):
 
 
 def get_guess():
-    """Will take the user's guess. Ensures the input is valid.
-
-    """
-    pass
+   def get_guess():
+    for i in range(7):
+        print("what is your guess bro?")
+        guess = str(input())#get input
+        if guess in list("qwertyuiopasdfghjklzxcvbnm"):
+                 break
+                 return guess
 
 
 def show_win_screen():
